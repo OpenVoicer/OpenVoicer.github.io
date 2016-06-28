@@ -21,11 +21,12 @@
 				<p>Please record yourself speaking with a monochannel at a rate of 16000Hz with a .MP3 or .wav file extension. 
 				Accompanying each dictation should be a .txt transcript of what was said.</p>
     		</div><!-- /.blurb -->
-    		<span>Audio File</span>
-		<input type="file" id="afile" name="audiofile" size="10"/>
-		<span>Text File</span>
-		<input type="file" id="tfile" name="textfile" size="10"/>
-		<input id="uploadbutton" type="button" value="Upload"/>
+    		<form enctype="multipart/form-data">
+    			<input name="audioFile" type="file" />
+    			<input name="textFile" type="file" />
+    			<input type="button" value="Upload" />
+		</form>
+		<progress></progress>
 		</div><!-- /.container -->
 		<footer>
     		<ul>
